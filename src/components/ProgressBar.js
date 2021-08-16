@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+// import { useFocusEffect } from '@react-navigation/native';
 
 const ProgressBar = (props) => {
   const { completed } = props;
+  var [completedPers, setCompleted] = useState(0);
+
+  // useFocusEffect(() => {
+  //   setCompleted(completed);
+  // }, []);
+
+  useEffect(() => {
+    setCompleted(completed);
+  }, []);
+
   const containerStyles = {
     height: 10,
     width: '100%',
@@ -12,7 +23,7 @@ const ProgressBar = (props) => {
 
   const fillerStyles = {
     height: '100%',
-    width: `${completed}%`,
+    width: `${completedPers}%`,
     transition: 'width 1s ease-in-out',
     backgroundImage: 'linear-gradient(90deg, #766dff 0%, #88f3ff 100%)',
     borderRadius: 'inherit',

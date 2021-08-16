@@ -3,7 +3,6 @@ import ProgressBar from './ProgressBar';
 
 const Welcome = () => {
   //   const [completed, setCompleted] = useState(0);
-  const completed = 85;
 
   //   useEffect(() => {
   //     setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
@@ -70,7 +69,7 @@ const Welcome = () => {
                   <div class='22222'>
                     <div class='progress_br'>
                       <div class='progress'>
-                        <ProgressBar completed='85' />
+                        <ProgressBar completed={85} />
                       </div>
                     </div>
                   </div>

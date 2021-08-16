@@ -6,6 +6,16 @@ import { Link } from 'react-router-dom';
 import { SRLWrapper } from 'simple-react-lightbox';
 
 const HomeGallery = () => {
+  const images = [
+    {
+      src: 'https://www.simple-react-lightbox.dev/docs/gallery/unsplash18.jpg',
+      thumbnail:
+        'https://www.simple-react-lightbox.dev/docs/gallery/thumbnails/unsplash18.jpg',
+      caption: 'Lorem ipsum dolor sit amet',
+      width: 1920,
+      height: 'auto',
+    },
+  ];
   return (
     <section class='home_gallery_area p_120'>
       <div class='container'>
@@ -15,118 +25,99 @@ const HomeGallery = () => {
         </div>
         <div class='isotope_fillter'>
           <ul class='gallery_filter list'>
-            <li class='active' data-filter='*'>
-              {/* <a href='#'>All</a>
-              </li>
-              <li data-filter='.brand'>
-                <a href='#'>Vector</a>
-              </li>
-              <li data-filter='.manipul'>
-                <a href='#'>Raster</a>
-              </li>
-              <li data-filter='.creative'>
-                <a href='#'>UI/UX</a>
-              </li>
-              <li data-filter='.design'>
-                <a href='#'>Printing</a> */}
-            </li>
+            <li class='active' data-filter='*'></li>
           </ul>
         </div>
       </div>
       <div class='container'>
-        <SRLWrapper>
-          <div class='gallery_f_inner row imageGallery1'>
-            <div class='col-lg-4 col-md-4 col-sm-6 brand manipul design print'>
-              <div class='h_gallery_item'>
-                <div class='g_img_item'>
-                  <img
-                    class='img-fluid'
-                    src={DevConnector}
-                    alt='DevConnector'
-                  />
-                </div>
-                <div class='g_item_text'>
-                  <h4>Developer Connector</h4>
-                  <p>Social network that helps employers to find developers</p>
-                  <Link
-                    to={{
-                      pathname: 'https://github.com/ViktorSheverdin/devNetwork',
-                    }}
-                    target='_blank'
-                  >
-                    Github repo
-                  </Link>
-                  <p></p>
-                  <Link
-                    to={{
-                      pathname: 'https://protected-river-13776.herokuapp.com/',
-                    }}
-                    target='_blank'
-                  >
-                    Demo
-                  </Link>
-                </div>
+        <div class='gallery_f_inner row imageGallery1'>
+          <div class='col-lg-4 col-md-4 col-sm-6 brand manipul design print'>
+            <div class='h_gallery_item'>
+              <div class='g_img_item'>
+                <img class='img-fluid' src={DevConnector} alt='DevConnector' />
+              </div>
+
+              <div class='g_item_text'>
+                <h4>Developer Connector</h4>
+                <p>Social network that helps employers to find developers</p>
+                <Link
+                  to={{
+                    pathname: 'https://github.com/ViktorSheverdin/devNetwork',
+                  }}
+                  target='_blank'
+                >
+                  Github repo
+                </Link>
+                <p></p>
+                <Link
+                  to={{
+                    pathname: 'https://protected-river-13776.herokuapp.com/',
+                  }}
+                  target='_blank'
+                >
+                  Demo
+                </Link>
               </div>
             </div>
-            <div class='col-lg-4 col-md-4 col-sm-6 brand manipul creative'>
-              <div class='h_gallery_item'>
-                <div class='g_img_item'>
-                  <img class='img-fluid' src={Starbucks} alt='' />
-                </div>
-                <div class='g_item_text'>
-                  <h4>Starbucks App</h4>
-                  <p>Interpretation of Starbucks website</p>
-                  <Link
-                    to={{
-                      pathname:
-                        'https://github.com/ViktorSheverdin/StarbucksApp',
-                    }}
-                    target='_blank'
-                  >
-                    Github repo
-                  </Link>
-                  <p></p>
-                  <Link
-                    to={{
-                      pathname: 'https://starbuckscloneapp.herokuapp.com/',
-                    }}
-                    target='_blank'
-                  >
-                    Demo
-                  </Link>
-                </div>
+          </div>
+          <div class='col-lg-4 col-md-4 col-sm-6 brand manipul creative'>
+            <div class='h_gallery_item'>
+              <div class='g_img_item'>
+                <img class='img-fluid' src={Starbucks} alt='' />
+              </div>
+              <div class='g_item_text'>
+                <h4>Starbucks App</h4>
+                <p>Interpretation of Starbucks website</p>
+                <Link
+                  to={{
+                    pathname: 'https://github.com/ViktorSheverdin/StarbucksApp',
+                  }}
+                  target='_blank'
+                >
+                  Github repo
+                </Link>
+                <p></p>
+                <Link
+                  to={{
+                    pathname: 'https://starbuckscloneapp.herokuapp.com/',
+                  }}
+                  target='_blank'
+                >
+                  Demo
+                </Link>
               </div>
             </div>
-            <div class='col-lg-4 col-md-4 col-sm-6 manipul creative design print'>
-              <div class='h_gallery_item'>
-                <div class='g_img_item'>
-                  <img class='img-fluid' src={Weather} alt='' />
-                </div>
-                <div class='g_item_text'>
-                  <h4>Weather forecast</h4>
-                  <p>Classical weather forecast project</p>
-                  <Link
-                    to={{
-                      pathname:
-                        'https://github.com/ViktorSheverdin/weather_application',
-                    }}
-                    target='_blank'
-                  >
-                    Github repo
-                  </Link>
-                  <p></p>
-                  <Link
-                    to={{
-                      pathname: 'https://yetanotherweatherapp.herokuapp.com/',
-                    }}
-                    target='_blank'
-                  >
-                    Demo
-                  </Link>
-                </div>
+          </div>
+          <div class='col-lg-4 col-md-4 col-sm-6 manipul creative design print'>
+            <div class='h_gallery_item'>
+              <div class='g_img_item'>
+                <img class='img-fluid' src={Weather} alt='' />
+              </div>
+              <div class='g_item_text'>
+                <h4>Weather forecast</h4>
+                <p>Classical weather forecast project</p>
+                <Link
+                  to={{
+                    pathname:
+                      'https://github.com/ViktorSheverdin/weather_application',
+                  }}
+                  target='_blank'
+                >
+                  Github repo
+                </Link>
+                <p></p>
+                <Link
+                  to={{
+                    pathname: 'https://yetanotherweatherapp.herokuapp.com/',
+                  }}
+                  target='_blank'
+                >
+                  Demo
+                </Link>
               </div>
             </div>
-            {/* <div class='col-lg-4 col-md-4 col-sm-6 brand creative print'>
+          </div>
+          {/* <div class='col-lg-4 col-md-4 col-sm-6 brand creative print'>
               <div class='h_gallery_item'>
                 <div class='g_img_item'>
                   <img
@@ -141,8 +132,7 @@ const HomeGallery = () => {
                 </div>
               </div>
             </div> */}
-          </div>
-        </SRLWrapper>
+        </div>
 
         <div class='more_btn'>
           {/* <a class='main_btn' href='#'>
