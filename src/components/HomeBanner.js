@@ -29,8 +29,7 @@ const HomeBanner = () => {
                     various custom scripts and applications to automate tasks
                     and enhance business processes. Focus is on maintaining
                     custom system that connects on Microsoft API for Skype,
-                    Outlook, and AD.
-                    <br />
+                    Outlook, and AD. <br />
                     As well as that, I work with SCCM and Carbon Black security
                     systems and end-user support. I am an avid full-stack
                     developer at heart, with a passion for learning and
@@ -40,7 +39,7 @@ const HomeBanner = () => {
                   <ul class='list basic_info'>
                     {/* <!-- <li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li> --> */}
                     <li>
-                      <span class='lnr lnr-phone-handset'></span> (778)-919-8507
+                      <span class='lnr lnr-phone-handset'></span> (778) 919-8507
                     </li>
                     <li>
                       <i class='lnr lnr-envelope'></i>{' '}
